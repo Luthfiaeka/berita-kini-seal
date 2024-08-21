@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Link from 'next/link';
 import styles from '../styles/footer.module.css';
 import { Facebook, Instagram, YouTube, Send } from '@mui/icons-material';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -35,14 +34,14 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className={styles.linksSection}>
-                <div>
+                    <div>
                         <h4>Telusuri</h4>
                         <ul>
-                            <li><Link href="/">Beranda</Link></li>
-                            <li><Link href="/Hiburan">Hiburan</Link></li>
-                            <li><Link href="/olahraga">Olahraga</Link></li>
-                            <li><Link href="/nasional">Nasional</Link></li>
-                            <li><Link href="/internasional">Internasional</Link></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/Hiburan">Kesehatan</a></li>
+                            <li><a href="/olahraga">Olahraga</a></li>
+                            <li><a href="/nasional">Nasional</a></li>
+                            <li><a href="/internasional">Internasional</a></li>
                         </ul>
                     </div>
                   
