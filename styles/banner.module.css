@@ -1,0 +1,59 @@
+.bannerWrapper {
+    position: relative;
+    width: 100%;
+    height: 100; 
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.bannerContainer {
+    display: flex;
+    width: 100%;
+    height: 500px; 
+    transition: transform 1s ease-in-out;
+}
+
+.bannerImage {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    
+}
+
+
+.navigationDotsWrapper {
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigationDots {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ADB5BD;
+    border: 2px solid #ADB5BD;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.activeDot {
+    background-color:#136EF0; 
+    border-color: #136EF0;
+}

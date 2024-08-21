@@ -1,0 +1,223 @@
+.headlineContainer {
+    position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .headlineItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+  }
+  .headlineItem.fade-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .headlineItem.fade-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .headlineItem.fade-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .navigationDots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #717171;
+}
+  .headlineContent {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .headlineTitle {
+    font-size: 20px;
+    font-weight: bold;
+    max-height: 3.6em; 
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .headlineDescription {
+    max-height: 5.2em; 
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .headlineDate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .calendarIcon {
+    margin-right: 5px;
+  }
+  
+  .readMoreLink {
+    color: blue;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .headlineImage {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .navigationDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #007bff;
+  }
+  
+  .rekomendasiContainer {
+    margin-top: 50px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .indicator {
+    width: 4px;
+    height: 24px;
+    background-color: blue;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  .newsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-decoration: none;
+  }
+  
+  .newsItem {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .titleText {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  text-decoration: none;
+  transition: color 0.3s, ;
+  }
+  .newsItemLink:hover .titleText {
+    color: blue;
+   
+    text-decoration: none;
+    
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .separator {
+    margin: 0 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

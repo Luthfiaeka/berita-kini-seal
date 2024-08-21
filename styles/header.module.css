@@ -1,0 +1,83 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 1px;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .header.scrolled {
+    background-color: blue;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .logoImage {
+    height: 44px;
+    transition: opacity 0.3s;
+  }
+  
+  .logoText {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+  }
+  
+  .header.scrolled .logoText {
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-right: 40px;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #000;
+  }
+  
+  .header.scrolled .navLink {
+    color: white;
+  }
+  
+  .active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  .body {
+    margin-top: 80px; 
+  }
+  .main-content {
+    padding-top: 80px; 
+  }

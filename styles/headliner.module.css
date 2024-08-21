@@ -1,0 +1,103 @@
+.headlineContainer {
+
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.headlineTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 5px;
+  text-align: left;
+  color:#526071;
+  margin-bottom: 10px;
+}
+
+.headlineItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  color:#333333;
+}
+
+.headlineContent {
+  flex: 1;
+  margin-top: 1px;
+}
+
+.headlineMainTitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.8px;
+  text-align: left;
+   margin-bottom: 10px;
+}
+
+.headlineDescription {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin: 10px 0;
+  color: #4F4F4F;
+}
+
+.headlineDate {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #526071;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.calendarIcon {
+  margin-right: 8px;
+  
+}
+
+.readMoreLink {
+  font-family: 'Inter', sans-serif;
+  color: #0090FF;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrowIcon {
+  margin-left: 5px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #526071;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+}
+
+.pagination button:hover:not(:disabled) {
+  color: #555;
+}
