@@ -32,7 +32,7 @@ const Nasional: React.FC = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get(`https://api-berita-indonesia.vercel.app/cnn/Nasional`);
+        const response = await axios.get(`https://api-berita-indonesia.vercel.app/cnn/nasional`);
         const allPosts: Post[] = response.data.data.posts || [];
         setHeadlines(allPosts.slice(0, 3)); 
         setRecommendedNews(allPosts.slice(3)); 
