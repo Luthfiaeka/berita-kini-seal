@@ -7,7 +7,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
             <div className={styles.footerContainer}>
                 <div className={styles.logoSection}>
                     
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 };
 
