@@ -1,57 +1,33 @@
 .footer {
     background-color: #2C3C4D;
     color: #FFF;
-    width: Fixed (1,440px)px;
-    height: Hug (449px)px;
+   
+   
     padding: 30px 90px 30px 40px;
-    border: 1px 0px 0px 0px;
-    opacity: 2px;
-    
+    border-top: 1px solid #000;
 }
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+    height: 321px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logoSection {
+    flex: 1;
+}
+
 .logoo {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.redText {
-    color: white;
-}
-
-
-
-.footerContainer {
-    display: flex;
-    width: Fill (1,296px)px;
-height: Hug (321px)px;
-gap: 72px;
-opacity: 0px;
-
-    
-}
-
-.copy {
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: left;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #B0B3B5;
-}
-
-.logoSection {
-    margin-bottom: 100px;
-  }
-.logoo {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 10px;
-}
 
 .logo {
-    width: 67.14px;
-    height: 68.17px;
-    gap: 0px;
-    opacity: 0px;
-    
+    width: 70px;
+    height: 70px;
     margin-bottom: 10px;
 }
 
@@ -62,69 +38,69 @@ opacity: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
+.copy {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #B0B3B5;
+}
+
 .socialIcons {
     margin-top: 15px;
     display: flex;
     
-    
 }
-.icon {
-    color: black;
-    font-size: 24px;
-  }
 
-.socialIcons a {
+.iconWrapper {
     margin-right: 10px;
     display: inline-block;
     width: 35px;
     height: 35px;
-    background-color: #ffff;
-    border-radius: 30%;
+    background-color: #fff;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-   
     
 }
 
-.socialIcons a img {
-    width: 20px;
-    height: 20px;
+.icon {
     color: black;
+    font-size: 24px;
 }
 
 .linksSection {
     display: flex;
+    justify-content: space-between; 
+    gap: 30px; 
     flex: 2;
-    justify-content: space-between;
-    gap: 5px;
-    margin-left: 30px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
+    
+}
+
+.linksSection > div {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .linksSection h4 {
-  
-    font-family: Nunito Sans;
-font-size: 22px;
-font-weight: 600;
-line-height: 35.2px;
-text-align: left;
-
-
-    
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 10px; 
 }
 
 .linksSection ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    
 }
 
 .linksSection ul li {
     margin-bottom: 8px;
+    
 }
 
 .linksSection ul li a {
@@ -144,45 +120,45 @@ text-align: left;
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    padding: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .input {
-    border: none; 
+    
+}
+
+.forminput {
+    border: none;
     padding: 10px;
     font-size: 14px;
     flex: 1;
-    outline: none; 
+    outline: none;
     background-color: #f7f7f7;
-    color: #fff;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 8px 0 0 8px; 
-    font-family: Nunito Sans;
-  }
-  
-  .input::placeholder {
+    color: #333;
+    border-radius: 8px 0 0 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.forminput::placeholder {
     color: #999;
-  }
-  
-  .submitButton {
+    
+}
+
+.submitButton {
     background-color: #007bff;
     border: none;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 8px 8px 0; 
+    border-radius: 0 8px 8px 0;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .submitButton:hover {
+}
+
+.submitButton:hover {
     background-color: #0056b3;
-  }
-  
-  .iconsend {
-    color: #ffff;
+}
+
+.iconsend {
+    color: #fff;
     font-size: 16px;
-  }
-  
+}
