@@ -3,6 +3,7 @@ import { useHeadlines } from '../hooks/useFetchNews';
 import styles from '../styles/headliner.module.css';
 import { FaCalendarAlt } from 'react-icons/fa'; 
 import { FiExternalLink } from 'react-icons/fi'; 
+import Link from 'next/link';
 
 const HeadlineList: React.FC = () => {
   const { posts, isLoading, error } = useHeadlines();
@@ -34,9 +35,9 @@ const HeadlineList: React.FC = () => {
                 <FaCalendarAlt className={styles.calendarIcon} />
                 <span>{currentPost.pubDate}</span>
               </div>
-              <a href={currentPost.link} target="_blank" rel="noopener noreferrer" className={styles.readMoreLink}>
-                Baca Selengkapnya <FiExternalLink className={styles.arrowIcon} />
-              </a>
+              <Link href={currentPost.link} target="_blank" rel="noopener noreferrer" className={styles.readMoreLink}>
+  Baca Selengkapnya <FiExternalLink className={styles.arrowIcon} />
+</Link>
             </div>
             <img
               src={currentPost.thumbnail}

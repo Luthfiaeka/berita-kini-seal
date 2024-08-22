@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { usePopularNews } from '../hooks/useFetchPopularNews';
 import styles from '../styles/populer.module.css';
 
@@ -20,7 +21,7 @@ const PopularNewsList: React.FC = () => {
       <div className={styles.newsList}>
         {popularNews.slice(0, 3).map((news, index) => (
           <React.Fragment key={news.link}>
-            <a href={news.link} target="_blank" rel="noopener noreferrer" className={styles.newsLink}>
+           <Link href={news.link} target="_blank" rel="noopener noreferrer" className={styles.newsLink}>
               <div className={styles.newsItem}>
                 <div className={styles.thumbnailContainer}>
                   <img
@@ -45,7 +46,7 @@ const PopularNewsList: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
             {index < 2 && (
               <div className={styles.separator} />
             )}
