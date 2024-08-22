@@ -1,17 +1,16 @@
 import React from 'react';
 import HeadlineList from '../components/headline';
 import  PopularHeadlines from '../components/populernews'
-import Footer from '../components/footer';
-import Header from '../components/header';
+
 import Recommendations from '../components/recomendations';
 import Banner from '../components/banner';
-
+import Layout from '../layout/Layout';
 export default function Home() {
   
 
   return (
     <div>
-        <Header/>
+        <Layout>
         <div style={{ paddingTop: '80px' }}>
         <HeadlineList />
         <PopularHeadlines />
@@ -20,9 +19,8 @@ export default function Home() {
         <Banner/>
 
         </div>
-        <Footer/>
-    
-        
+        </Layout>
+      
   
     </div>
   );
