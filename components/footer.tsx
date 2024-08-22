@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/footer.module.css';
 import { Facebook, Instagram, YouTube } from '@mui/icons-material';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -15,15 +16,15 @@ const Footer: React.FC = () => {
                     <p className={styles.copy}>&copy; 2023 Berita Kini. All Rights Reserved.</p>
                     <p>Ikuti Kami</p>
                     <div className={styles.socialIcons}>
-                        <a href="#" aria-label="YouTube" className={styles.iconWrapper}>
+                        <Link href="#" aria-label="YouTube" className={styles.iconWrapper}>
                             <YouTube className={styles.icon} />
-                        </a>
-                        <a href="#" aria-label="Instagram" className={styles.iconWrapper}>
+                        </Link>
+                        <Link href="#" aria-label="Instagram" className={styles.iconWrapper}>
                             <Instagram className={styles.icon} />
-                        </a>
-                        <a href="#" aria-label="Facebook" className={styles.iconWrapper}>
+                        </Link>
+                        <Link href="#" aria-label="Facebook" className={styles.iconWrapper}>
                             <Facebook className={styles.icon} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -31,20 +32,20 @@ const Footer: React.FC = () => {
                     <div>
                         <h4>Telusuri</h4>
                         <ul>
-                            <li><a href="/">Beranda</a></li>
-                            <li><a href="/Hiburan">Kesehatan</a></li>
-                            <li><a href="/olahraga">Olahraga</a></li>
-                            <li><a href="/nasional">Nasional</a></li>
-                            <li><a href="/internasional">Internasional</a></li>
+                            <li><Link href="/">Beranda</Link></li>
+                            <li><Link href="/Hiburan">Kesehatan</Link></li>
+                            <li><Link href="/olahraga">Olahraga</Link></li>
+                            <li><Link href="/nasional">Nasional</Link></li>
+                            <li><Link href="/internasional">Internasional</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4>Bantuan</h4>
                         <ul>
-                            <li><a href="#">Kontak Kami</a></li>
-                            <li><a href="#">Laporan Pembajakan</a></li>
-                            <li><a href="#">Kebijakan</a></li>
+                            <li><Link href="#">Kontak Kami</Link></li>
+                            <li><Link href="#">Laporan Pembajakan</Link></li>
+                            <li><Link href="#">Kebijakan</Link></li>
                         </ul>
                     </div>
 

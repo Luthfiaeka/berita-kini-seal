@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 import { FaCalendarAlt } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import styles from '../styles/internasional.module.css'; 
@@ -91,9 +92,9 @@ const Hiburan: React.FC = () => {
                 <FaCalendarAlt className={styles.calendarIcon} />
                 <span>{new Date(currentHeadline.pubDate).toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
               </div>
-              <a href={currentHeadline.link} target="_blank" rel="noopener noreferrer" className={styles.readMoreLink}>
-                Baca Selengkapnya <FiExternalLink className={styles.arrowIcon} />
-              </a>
+              <Link href={currentHeadline.link} target="_blank" rel="noopener noreferrer" className={styles.readMoreLink}>
+  Baca Selengkapnya <FiExternalLink className={styles.arrowIcon} />
+</Link>
             </div>
             <img
               src={currentHeadline.thumbnail}
@@ -125,13 +126,13 @@ const Hiburan: React.FC = () => {
 
         <div className={styles.newsList}>
   {paginatedRecommendations.map((item: Post) => (
-    <a 
-      key={item.id} 
-      href={item.link} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className={styles.newsItemLink}
-    >
+   <Link
+   key={item.id}
+   href={item.link}
+   target="_blank"
+   rel="noopener noreferrer"
+   className={styles.newsItemLink}
+ >
       <div className={styles.newsItem}>
         <img src={item.thumbnail} alt={item.title} className={styles.thumbnail} />
         <h3 className={styles.titleText}>{item.title}</h3>
@@ -141,7 +142,7 @@ const Hiburan: React.FC = () => {
           <span className={styles.date}>{new Date(item.pubDate).toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
         </div>
       </div>
-    </a>
+    </Link>
   ))}
 </div>
 
