@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                         <h4>Telusuri</h4>
                         <ul>
                             <li><Link href="/">Beranda</Link></li>
-                            <li><Link href="/Hiburan">Kesehatan</Link></li>
+                            <li><Link href="/hiburan">Kesehatan</Link></li>
                             <li><Link href="/olahraga">Olahraga</Link></li>
                             <li><Link href="/nasional">Nasional</Link></li>
                             <li><Link href="/internasional">Internasional</Link></li>
