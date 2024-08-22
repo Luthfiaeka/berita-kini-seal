@@ -45,11 +45,11 @@ const Footer: React.FC = () => {
                     <div>
                         <h4>Telusuri</h4>
                         <ul>
-                            <li><Link href="/">Beranda</Link></li>
-                            <li><Link href="/hiburan">Kesehatan</Link></li>
-                            <li><Link href="/olahraga">Olahraga</Link></li>
-                            <li><Link href="/nasional">Nasional</Link></li>
-                            <li><Link href="/internasional">Internasional</Link></li>
+                            <li><Link href="#">Beranda</Link></li>
+                            <li><Link href="#">Kesehatan</Link></li>
+                            <li><Link href="#">Olahraga</Link></li>
+                            <li><Link href="#">Nasional</Link></li>
+                            <li><Link href="#">Internasional</Link></li>
                         </ul>
                     </div>
 
