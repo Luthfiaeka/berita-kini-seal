@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/footer.module.css';
 import { Facebook, Instagram, YouTube } from '@mui/icons-material';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -10,20 +11,32 @@ const Footer: React.FC = () => {
             <div className={styles.footerContainer}>
                 <div className={styles.logoSection}>
                     <div className={styles.logoo}>
-                        <img src="./images/white_logo.png" alt="Logo" className={styles.logo} />
+                        <Image 
+                            src="/images/white_logo.png" 
+                            alt="Logo" 
+                            className={styles.logo} 
+                            width={150}  // Sesuaikan dengan lebar gambar yang sesuai
+                            height={50}  // Sesuaikan dengan tinggi gambar yang sesuai
+                        />
                         <span className={styles.logoText}>Berita Kini</span>
                     </div>
                     <p className={styles.copy}>&copy; 2023 Berita Kini. All Rights Reserved.</p>
                     <p>Ikuti Kami</p>
                     <div className={styles.socialIcons}>
-                        <Link href="#" aria-label="YouTube" className={styles.iconWrapper}>
-                            <YouTube className={styles.icon} />
+                        <Link href="#" aria-label="YouTube">
+                            <div className={styles.iconWrapper}>
+                                <YouTube className={styles.icon} />
+                            </div>
                         </Link>
-                        <Link href="#" aria-label="Instagram" className={styles.iconWrapper}>
-                            <Instagram className={styles.icon} />
+                        <Link href="#" aria-label="Instagram">
+                            <div className={styles.iconWrapper}>
+                                <Instagram className={styles.icon} />
+                            </div>
                         </Link>
-                        <Link href="#" aria-label="Facebook" className={styles.iconWrapper}>
-                            <Facebook className={styles.icon} />
+                        <Link href="#" aria-label="Facebook">
+                            <div className={styles.iconWrapper}>
+                                <Facebook className={styles.icon} />
+                            </div>
                         </Link>
                     </div>
                 </div>
