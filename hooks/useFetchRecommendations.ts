@@ -25,12 +25,32 @@ export const useRecommendedNews = (): UseRecommendedNewsReturn => {
   useEffect(() => {
     const fetchRecommendedNews = async () => {
       try {
-        const categories = ['terbaru', 'nasional', 'internasional', 'olahraga', 'teknologi', 'hiburan'];
+        const categories = ['nasional', 'terbaru', 'internasional', 'teknologi', 'olahraga', 'hiburan'];
         const responses = await Promise.all(
           categories.map(category => axios.get(`https://api-berita-indonesia.vercel.app/cnn/${category}`))
         );
-        const allHeadlines: Post[] = responses.flatMap(response => response.data.data.posts || []);
-        setRecommendedNews(allHeadlines);
+  
+
+        const allHeadlines: Post[] = responses.flatMap((response, index) =>
+          response.data.data.posts.map((post: Post) => ({
+            ...post,
+            category: categories[index], 
+          }))
+        );
+  
+
+        const sortedHeadlines = allHeadlines.sort((a, b) => {
+          const categoryOrderA = categories.indexOf(a.category || '');
+          const categoryOrderB = categories.indexOf(b.category || '');
+          
+          if (categoryOrderA !== categoryOrderB) {
+            return categoryOrderA - categoryOrderB;
+          } else {
+            return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
+          }
+        });
+  
+        setRecommendedNews(sortedHeadlines);
       } catch (error) {
         if (axios.isAxiosError(error)) {
           setError(error.message);
@@ -43,9 +63,10 @@ export const useRecommendedNews = (): UseRecommendedNewsReturn => {
         setIsLoading(false);
       }
     };
-
+  
     fetchRecommendedNews();
   }, []);
+  
 
   return { recommendedNews, isLoading, error };
 };
